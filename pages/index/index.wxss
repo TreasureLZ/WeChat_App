@@ -1,0 +1,24 @@
+/**index.wxss**/
+/* .T{
+    background-color: red;
+    width: 100%;
+} */
+.container{
+    margin: auto;
+    width: 95%;
+}
+checkbox {
+    width: 88%;
+}
+.checkbox-group{
+    background-color: gold;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+text{
+    font-size: 1.5ch;
+}
+.interval{
+    padding: 5px;
+}

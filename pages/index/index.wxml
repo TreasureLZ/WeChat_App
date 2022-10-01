@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+    
+    <view class="interval"></view>
+    <view class="interval"></view>
+    <checkbox class="checkbox-group">
+        <text>123</text>
+    </checkbox>
+    <view class="interval"></view>
+    <checkbox class="checkbox-group">
+        <text>123456</text>
+    </checkbox>
+    <view class="interval"></view>
+    <checkbox class="checkbox-group">
+        <text>123456789</text>
+        <text>abcdefg</text>
+    </checkbox>
+</view>
+<!-- <view class="container">
+    <view class="weui-cells">
+        <checkbox-group class="group" bind:change="checkboxChange">
+            <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="id">
+                <view class="weui-cell__hd" style="height: 100rpx;">
+                    <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+                    {{item.content}}
+                </view>
+            </label>
+        </checkbox-group>
+    </view>
+</view> -->

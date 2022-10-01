@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/Todo/Todo"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor":"#FFD700",
+        "navigationBarTitleText": "口袋清单",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "borderStyle": "black",
+		"selectedColor": "#FB7299",
+        "color": "#444444",
+        "backgroundColor": "#FFD700",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/茶.png",
+				"selectedIconPath": "static/tabbar/茶.png",
+				"text": "发现"
+            },
+            {
+                "pagePath": "pages/Todo/Todo",
+				"iconPath": "static/tabbar/糯米糍.png",
+				"selectedIconPath": "static/tabbar/糯米糍.png",
+				"text": "Todo"
+            }
+        ]
+    }
+}
