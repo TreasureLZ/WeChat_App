@@ -11,6 +11,13 @@ Component({
      * 组件的方法列表
      */
     methods: {
+        // 确定时间
+        bindDateChange: function(e) {
+            console.log('picker发送选择改变，携带值为', e.detail.value)
+            this.setData({
+              date: e.detail.value
+            })
+        },
         // 生成一个uuid
         getUUID(randomLength = 12) {
             return Math.random().toString().substr(2, randomLength) + Date.now().toString(36)

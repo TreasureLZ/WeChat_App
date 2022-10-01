@@ -1,24 +1,49 @@
 /**index.wxss**/
-/* .T{
-    background-color: red;
-    width: 100%;
-} */
-.container{
+.container {
     margin: auto;
     width: 95%;
 }
+
 checkbox {
     width: 88%;
 }
-.checkbox-group{
+
+.checkbox-group {
     background-color: gold;
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #000000;
 }
-text{
-    font-size: 1.5ch;
+
+checkbox .wx-checkbox-input {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: gold;
+    border: 2px solid #000000;
 }
-.interval{
-    padding: 5px;
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+    background: #000000;
+    border-color: #000000;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+    width: 25rpx;
+    height: 25rpx;
+    line-height: 20rpx;
+    text-align: center;
+    font-size: 25rpx;
+    color: gold;
+    background: transparent;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-55%, -40%) scale(1);
+}
+
+.title {
+    padding-left: 5px;
+}
+
+.interval {
+    margin-bottom: 20rpx;
 }

@@ -1,13 +1,59 @@
 /* pages/Todo/Todo.wxss */
-
-.list-input {
-    padding-top: 30rpx;
-    padding-bottom: 50rpx;
+page{
+    background-color: #ececec;
+    /* background-color:#a5a2a2; */
 }
-
+.container {
+    margin: auto;
+    width: 92%;
+    padding-top: 10px;
+}
+.title{
+    padding: 3px;
+}
+.title text{
+    font-size: 16px;
+    font-weight: 600;
+}
+.title input{
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.push{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.push .title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.push .date{
+    font-size: 14px;
+    padding: 5px;
+    color: #a5a2a2;
+}
+.temp{
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+.remind{
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #a5a2a2;
+}
+.interval {
+    padding: 5px;
+}
 .line {
-    width: 100%;
-    height: 3rpx;
-    background: #ddd;
+    height: 0.1px;
+    background-color: #d8d7d7;
     margin-bottom: 20rpx;
 }

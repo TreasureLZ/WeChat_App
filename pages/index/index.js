@@ -32,7 +32,6 @@ Component({
         },
         // 状态审核
         checkboxChange(e) {
-            console.log(123)
             let items = JSON.parse(JSON.stringify(this.data.items))
             // 遍历items状态，找到checked状态变化的元素
             for (const [index, item] of items.entries()) {

@@ -1,12 +1,28 @@
 <!--pages/Todo/Todo.wxml-->
 <view class="container">
-    <view class="list-input">
-        <view class="weui-cell weui-cell_input">
-            <input bind:input="keyInput" value="{{inputedValue}}" class="weui-input" maxlength="50" placeholder="请输入待办事项" />
+    <view class="temp">
+        <view class="title">
+            <text>待办事项\n</text>
+            <input type="text" bind:input="keyInput" value="{{inputedValue}}" class="weui-input" maxlength="50" placeholder="请输入待办事项（50字内）" />
         </view>
-
         <view class="line"></view>
-
-        <button bind:tap="inputSubmit" class="weui-btn" type="default" style="color: gray;">提交</button>
+        <view class="title">
+            <text>详细描述\n</text>
+            <input type="text" placeholder="请输入详细描述（选填，200字内）" />
+        </view>
     </view>
+    <view class="interval"></view>
+    <view class="temp">
+            <picker mode="date" bindchange="bindDateChange">
+                <view class="push">
+                    <text class="title">通知日期</text>
+                    <text class="date" wx:if="{{date}}">{{date}}  >  </text>
+                    <text class="date" wx:else>未开启  >  </text>
+                </view>
+                <view class="line"></view>
+            </picker>
+            <text class="remind">开启此选项后，小程序将在当日早上8:00点（北京时间）发送一条提醒消息到微信中。</text>
+    </view>
+    <view class="interval"></view>
+    <button bind:tap="inputSubmit" class="weui-btn" type="default" style="background-color: white; color: rgb(0, 0, 0);">提交</button>
 </view>
