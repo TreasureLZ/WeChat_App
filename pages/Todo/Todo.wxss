@@ -1,7 +1,6 @@
 /* pages/Todo/Todo.wxss */
 page{
     background-color: #ececec;
-    /* background-color:#a5a2a2; */
 }
 .container {
     margin: auto;
