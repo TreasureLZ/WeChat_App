@@ -5,7 +5,7 @@
             <text>待办事项\n</text>
             <input type="text" bind:input="keyInput" value="{{inputedValue}}" class="weui-input" maxlength="50" placeholder="请输入待办事项（50字内）" />
         </view>
-        <view class="line"></view>
+        <view class="line"></view>xx
         <view class="title">
             <text>详细描述\n</text>
             <input type="text" placeholder="请输入详细描述（选填，200字内）" />
